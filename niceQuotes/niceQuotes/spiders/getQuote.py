@@ -14,3 +14,9 @@ class GetquoteSpider(scrapy.Spider):
             tag = item.xpath('div[@class="tags"]/a/text()').extract()
 
             yield {'Quote': quote, 'Author': author, 'Tags': tag}
+
+        relative_next_url = response.xpath('//li[@class="next"]/a/@href').extract_first()
+        absolute_next_url = response.urljoin(relative_next_url)
+
+        yield scrapy.Request(absolute_next_url, callback=self.parse)
+        # print(relative_next_url, absolute_next_url)
