@@ -39,3 +39,8 @@ Run this using:
 ```
 scrapy crawl jobs
 ```
+
+Or, save result in a csv file:
+```
+scrapy crawl jobs -o result-quotes.csv
+```
