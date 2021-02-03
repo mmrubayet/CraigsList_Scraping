@@ -3,9 +3,7 @@
 
 For this project we need to install **Scrapy**, a web scraping framework written in python.
 
-To install Scrapy:
+*To install Scrapy:*
 ```
 pip install scrapy
 ```
-
-To Start a Scrapy project:
