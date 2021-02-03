@@ -7,14 +7,12 @@ For this project we need to install **Scrapy**, a web scraping framework written
 ```
 pip install scrapy
 ```
-#
-
-#### Typically any Scrapy command will look like this:
+#### Typically any Scrapy command looks like this:
 ```
 scrapy <command> [options] [args]
 ```
-
-### Creating a Scrapy Project
+#
+### Creating a Brand New Scrapy Project
 
 Now, we need to create a Scrapy project.
 The command is:  `scrapy startproject 'projectName'`
@@ -22,4 +20,13 @@ The command is:  `scrapy startproject 'projectName'`
 *Let's do ours:*
 ```
 scrapy startproject craigslist
+```
+
+### Now Create a scrapy Spider
+
+Navigate to craigslist folder using `cd craigsList`
+
+Now we need to create a spider named 'jobs', using `genspider` command followed by a name and a URL.
+```
+scrapy genspider jobs https://newyork.craigslist.org/search/egr
 ```
