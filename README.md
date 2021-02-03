@@ -1,5 +1,5 @@
-# **craigsList_scraping**
- ### A web scraping project. Scraps data from Craigslist website.
+# Website Scraping any
+ ### A web scraping project. To scrap data from particular website.
 #
 For this project we need to install **Scrapy**, a web scraping framework written in python.
 
@@ -31,4 +31,11 @@ Navigate to craigslist folder using `cd craigsList`
 Now we need to create a spider named 'jobs', using `genspider` command followed by a name and a URL.
 ```
 scrapy genspider jobs https://newyork.craigslist.org/search/egr
+```
+**Warning:** Remember to delete extra (if exits) `http://` in `start_urls` in jobs.py file or the spider will not work.
+
+Now we have a basic spider.
+Run this using:
+```
+scrapy crawl jobs
 ```
