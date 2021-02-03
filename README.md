@@ -1,4 +1,4 @@
-# Website Scraping any
+# Website Scraping
  ### A web scraping project. To scrap data from particular website.
 #
 For this project we need to install **Scrapy**, a web scraping framework written in python.
