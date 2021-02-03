@@ -33,3 +33,14 @@ Now we need to create a spider named 'jobs', using `genspider` command followed 
 scrapy genspider getQuote http://quotes.toscrape.com/
 ```
 **Warning:** Remember to delete extra (if exits) `http://` in `start_urls` in `getQuote` within `spiders` folder. Otherwise the spider will not work.
+
+Now we have a basic spider.
+Run this using:
+```
+scrapy crawl niceQuotes
+```
+
+Or, save result in a csv file:
+```
+scrapy crawl niceQuotes -o quotes-one-page.csv
+```
