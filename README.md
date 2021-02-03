@@ -3,6 +3,8 @@
 #
 For this project we need to install **Scrapy**, a web scraping framework written in python.
 
+##### Note: *To go through this project, you need to know the basics of python as well as command line/terminal, and have installed python in your system.*
+
 *To install Scrapy:*
 ```
 pip install scrapy
