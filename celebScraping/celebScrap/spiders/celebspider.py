@@ -7,4 +7,7 @@ class CelebspiderSpider(scrapy.Spider):
     start_urls = ['https://celebrityxyz.com']
 
     def parse(self, response):
-        pass
+        for category in response.css('div#indexmenu'):
+             yield { 'cat': category.css('li a::attr(href)').re(r'/list/profession/\s*(.*)')
+             }
+            # print(category)
